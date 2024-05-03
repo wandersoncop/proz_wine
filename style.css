@@ -37,19 +37,15 @@
     display: flex;
     border: none;
   }
-  .pesquisar{
-    border-radius: 15px;
-    height: 15px;
-    padding: 10px;  
-    background-color: #fff;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-  }
-  .pesquisar .button{
-   border: none;
-   background:none;
-   height: 35px;
+  
+  p{
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    text-indent: 1rem;
+  
+    
+    
   }
   .nav-list {
     display: flex;
@@ -84,7 +80,77 @@
     position: relative;
     transition: 0.3s;
   }
-  @media (max-width: 750px) {
+  .search-container {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin-top: 10%;
+    height: 35px;/*altura da logo */
+    align-items: center;
+    display: flex;
+    border: none;
+   
+}
+
+.search-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+.search-icon::before {
+    content: '';
+    width: 25%;
+    height: 25%;
+    border-radius: 50%;
+    border: 2px solid #3b0f14;
+}
+
+.search-icon::after {
+    content: '';
+    width: 20%;
+    height: 2px;
+    background-color: #3b0f14;
+}
+
+.search-input {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    padding-left: 40px;
+    transition: all 0.7s;
+}
+
+.search-input:focus {
+    width: 150px;
+    box-shadow: 2px 2px 5px #777;
+}
+
+.search-input:valid {
+    width: 150px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media (max-width: 760px) {
     .hamburger {
       display: block;
       z-index: 1;
